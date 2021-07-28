@@ -4,6 +4,6 @@ This folder contains the diagrams used in the paper titled: "HashCuckoo: Predict
 ______________
 
 
-To view, access the files: `All-diagrams.pdf` or `All-diagrams.png`
+To view, access the files: `All-diagrams.pdf` or `Preview-diagrams.png`
 
 For editing, import the file `Editable-diagrams.html` into https://app.diagrams.net/. 
