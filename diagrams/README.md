@@ -6,4 +6,4 @@ ______________
 
 To view, access the files: `All-diagrams.pdf` or `Preview-diagrams.png`
 
-For editing, import the file `Editable-diagrams.html` into https://app.diagrams.net/. 
+For reproduction and editing, import the file `Editable-diagrams.html` into https://app.diagrams.net/. 
