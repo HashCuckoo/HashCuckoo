@@ -6,4 +6,4 @@ ______________
 
 To view, access the files: `*.ipynb`.
 
-For reproduction and editing, use `Jupyter` https://jupyter.org/. 
+For reproduction and editing, use *Jupyter* (https://jupyter.org/). 
