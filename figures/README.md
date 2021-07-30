@@ -4,5 +4,7 @@ This folder contains the graphics and diagrams used in the paper titled: "HashCu
 ______________
 
 Acccess folders: 
+
 `diagrams` to figures 1, 3, 4, 6, and 9.
+
 `graphics` to figures 2, 5, 7, and 8.
