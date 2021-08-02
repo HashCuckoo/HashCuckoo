@@ -9,7 +9,7 @@ import socket
 import random
 import struct
 from flowManager       import Flow
-from updateThreshold  import UpdateSwitches
+from updateSwitches  import UpdateSwitches
 from predictionModule import Prediction
 
 from scapy.all import sniff, sendp
