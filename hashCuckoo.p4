@@ -117,9 +117,9 @@ struct metadata {
     @metadata @name("intrinsic_metadata")
     intrinsic_metadata_t intrinsic_metadata;
     
-    size_tt limiarBytes;
+    size_tt thresholdBytes;
     timer_t timeOut;
-    timer_t limiarTime;
+    timer_t thresholdTime;
     ip4Addr_t ipSwitch;
     ip4Addr_t ipvAddr;
     port_t srcPort;
@@ -345,14 +345,14 @@ control ingress(inout headers hdr, inout metadata meta, inout standard_metadata_
     }
 
 
-    action set_limiar(timer_t timeOut, timer_t time, size_tt size){
+    action set_threshold(timer_t timeOut, timer_t time, size_tt size){
         meta.timeOut     = timeOut;
-        meta.limiarTime  = time;
-        meta.limiarBytes = size;
+        meta.thresholdTime  = time;
+        meta.thresholdBytes = size;
     }
 
-    table get_limiar {
-        actions        = { set_limiar; NoAction; }
+    table get_threshold {
+        actions        = { set_threshold; NoAction; }
         default_action =  NoAction();
     }
 
@@ -472,7 +472,7 @@ control ingress(inout headers hdr, inout metadata meta, inout standard_metadata_
                 
             }else{
 
-                get_limiar.apply();      //Get Threshholds
+                get_threshold.apply();      //Get Threshholds
                 get_flag_host.apply();   //Checks whether the packet comes from a host (ingress to network) or from a switch (network inside).
                 flagNF   = 0;            //Aux flag to identification
                 flagNF_2 = 0;            //Aux flag to identification
@@ -659,7 +659,7 @@ control ingress(inout headers hdr, inout metadata meta, inout standard_metadata_
                     if(flagEF == 1 && flagEF_2 == 1){
                         hdr.ipv4.diffserv = FLAG_EF;         //Set header's identification flag to network mitigation.
                     }else{
-                        if((timeC-timeF) > meta.limiarTime && contSum > meta.limiarBytes){   //Check Thresholds.
+                        if((timeC-timeF) > meta.thresholdTime && contSum > meta.thresholdBytes){   //Check Thresholds.
                             /*********************************
                               ELEPHANT FLOW  IDENTIFICATED 
                             ***********************************/
