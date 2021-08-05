@@ -1,5 +1,5 @@
 # HashCuckoo: Predicting Elephant Flows using Meta-heuristics in Programmable Data Planes
-This repository contains the implementation and metadata of the HashCuckoo prototype presented in the paper submitted to IEEE INFOCOM 2022.
+This repository contains the implementation and metadata of the HashCuckoo prototype presented in the paper submitted to IEEE INFOCOM 2022. We will include additional information after the [INFOCOM](https://infocom2022.ieee-infocom.org/) review process.
 
 
 ___________________________
@@ -41,3 +41,9 @@ bash start_tshark.py
 ```
 python ./workload/start_workload.py
 ```
+* Alternatively, we recommend using ping to test hosts' communication, for example:
+```
+mininet> h1 ping h2
+```
+
+
