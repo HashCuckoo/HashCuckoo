@@ -41,7 +41,7 @@ bash start_tshark.py
 ```
 python ./workload/start_workload.py
 ```
-* Alternatively, we recommend using ping to test hosts' communication, for example:
+* Alternatively, we recommend using ping to test hosts communication, for example:
 ```
 mininet> h1 ping h2
 ```
