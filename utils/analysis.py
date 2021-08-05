@@ -266,8 +266,8 @@ if __name__ == '__main__':
     print np.std(timeCONT)
     print("-------------------------------------\n"
         "\tMetrics Analysis (Avg)\n-------------------------------------\n"
-        "Reaction Time (s):  %s\nExcedent Bytes:     %s\n"
-        "Excedent Pkt Number: %s"%(timeReation,sizeExed,pktEEExed) )
+        "Reaction Time (s):  %s\nExcess Bytes:     %s\n"
+        "Excess Pkt Number: %s"%(timeReation,sizeExed,pktEEExed) )
     arqEF.write("%s,%s,%s\n"%(timeReation,sizeExed, pktEEExed))
     arqEF.close()
     print("-------------------------------------\n\nDone!")
