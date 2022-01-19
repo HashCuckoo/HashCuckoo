@@ -3,10 +3,10 @@
 HashCuckoo implementation in P4_v16
 HashCuckoo is a mechanism for predicting programmable data plane elephant flows,
 presented in the titled paper: "HashCuckoo: Predicting Elephant Flows using Meta-heuristics in Programmable Data Planes",
- submitted for IEE INFOCOM 2022.
+ submitted for IFIP Networking Conference 2022.
 
  Instructions for running this code are described in the HashCuckoo GitHub repository:
- https://github.com/HashCuckoo/HashCuckoo-INFOCOM
+ https://github.com/HashCuckoo/HashCuckoo-IFIP-Networking
 
 ****************************/
 
